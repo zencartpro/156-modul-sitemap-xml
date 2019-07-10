@@ -4,17 +4,17 @@
  *
  * @package Sitemap XML
  * @copyright Copyright 2005-2015 Andrew Berezin eCommerce-Service.com
- * @copyright Copyright 2003-2018 Zen Cart Development Team
+ * @copyright Copyright 2003-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: sitemapxml_products.php 2018-10-24 20:59:11 webchills $
+ * @version $Id: sitemapxml_products.php 2019-07-10 08:59:11 webchills $
  */
 define('SITEMAPXML_PRODUCTS_IMAGES_SIZE', 'large');
 define('SITEMAPXML_PRODUCTS_IMAGES_ADDITIONAL', 'false'); // true false
 define('SITEMAPXML_PRODUCTS_IMAGES_FUNCTION', 'false'); // true false
 
 echo '<h3>' . TEXT_HEAD_PRODUCTS . '</h3>';
-$sql = "select * from " . TABLE_PRODUCT_TYPES . "";
+$sql = "select * from " . TABLE_PRODUCT_TYPES;
 $products_handler_array = array(0 => 'product_info');
 $zp_handler = $db->Execute($sql);
 while (!$zp_handler->EOF) {
@@ -119,7 +119,8 @@ if ($sitemapXML->SitemapOpen('products', $last_date)) {
   }
   $sitemapXML->SitemapClose();
   mysqli_free_result($products->resource);
-unset($products);
+  unset($products);
 }
 unset($catsArray);
+
 // EOF

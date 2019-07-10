@@ -7,7 +7,7 @@
  * @copyright Copyright 2003-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: sitemapxml.php 2019-06-27 17:10:18 webchills $
+ * @version $Id: sitemapxml.php 2019-07-10 07:56:18 webchills $
  */
 
 require('includes/application_top.php');
@@ -164,7 +164,7 @@ label.plugin_active {
 <script type="text/javascript">
 function getFormFields(obj) {
   var getParms = "";
-  for (i=0; i<obj.childNodes.length; i++) {
+  for (var i=0; i<obj.childNodes.length; i++) {
     if (obj.childNodes[i].name == "securityToken") continue;
     if (obj.childNodes[i].tagName == "INPUT") {
       if (obj.childNodes[i].type == "text") {
