@@ -1,6 +1,10 @@
 # 156-modul-sitemap-xml
 Sitemap XML für Zen Cart 1.5.6 deutsch
 
+Hinweis: 
+Freigegebene getestete Versionen für den Einsatz in Livesystemen ausschließlich unter Releases herunterladen:
+https://github.com/zencartpro/156-modul-sitemap-xml/releases
+
 Dieses Modul generiert für Google und Bing geeignete XML Sitemaps nach den hier beschriebenen Spezifikationen:
 https://support.google.com/webmasters/answer/156184?hl=de&topic=8476&ctx=topic
 https://www.sitemaps.org/
