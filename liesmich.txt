@@ -1,4 +1,4 @@
-Sitemap XML 4.1.0 für Zen Cart 1.5.6 deutsch
+Sitemap XML 4.1.1 für Zen Cart 1.5.6 deutsch
 
 Dieses Modul generiert für Google und Bing geeignete XML Sitemaps nach den hier beschriebenen Spezifikationen:
 https://support.google.com/webmasters/answer/156184?hl=de&topic=8476&ctx=topic
@@ -11,6 +11,9 @@ Anpassung und Überarbeitung des Moduls Sitemap XML 3.9.5 von Andrew Berezin zur
 
 Changelog:
 
+Version 4.1.1
+webchills - Juni 2021
+Nicht mehr verwendete zen_admin_demo() Functon entfernt aus DEINADMIN/sitemapxml.php
 Version 4.1.0
 webchills - Juni 2019
 

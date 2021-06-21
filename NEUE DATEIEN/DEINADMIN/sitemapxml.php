@@ -4,10 +4,10 @@
  *
  * @package Sitemap XML Feed
  * @copyright Copyright 2005-2018 Andrew Berezin eCommerce-Service.com
- * @copyright Copyright 2003-2019 Zen Cart Development Team
+ * @copyright Copyright 2003-2021 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: sitemapxml.php 2019-07-10 07:56:18 webchills $
+ * @version $Id: sitemapxml.php 2021-06-21 09:59:18 webchills $
  */
 
 require('includes/application_top.php');
@@ -27,14 +27,7 @@ $action = (isset($_POST['action']) ? $_POST['action'] : '');
 
 if (zen_not_null($action)) {
 
-  switch ($action) {
-    // demo active test
-    case (zen_admin_demo()):
-      $action = '';
-      $messageStack->add_session(ERROR_ADMIN_DEMO, 'caution');
-      zen_redirect(zen_href_link(FILENAME_SITEMAPXML));
-      break;
-   
+  switch ($action) {    
     case 'view_file':
     case 'truncate_file':
     case 'delete_file':
