@@ -13,7 +13,9 @@ Changelog:
 
 Version 4.1.1
 webchills - Juni 2021
+
 Nicht mehr verwendete zen_admin_demo() Functon entfernt aus DEINADMIN/sitemapxml.php
+
 Version 4.1.0
 webchills - Juni 2019
 
@@ -47,7 +49,7 @@ DELETE FROM configuration_language WHERE configuration_key LIKE '%SITEMAPXML%';
 DELETE FROM configuration_group WHERE configuration_group_title = 'Sitemap XML';
 DELETE FROM admin_pages WHERE language_key LIKE '%SITEMAPXML%';
 
-Erst dann Version 4.1.0 installieren
+Erst dann Version 4.1.1 installieren
 
 Die Installation ist sehr einfach, es werden keinerlei bestehende Dateien geändert oder überschrieben.
 
